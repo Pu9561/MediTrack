@@ -1,13 +1,14 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
+import os
+os.urandom(24)
 db = SQLAlchemy()
-DB_NAME = "databse.db"
-
+DB_NAME = "database.db"
 
 def create_app():
     app=Flask(__name__)
-    app.config['SECRET_KEY']=='MediTrack'
+    app.config['SECRET_KEY']=='ajkdl;aj jakds;jfkal;'
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     db.init_app(app)
     
@@ -23,5 +24,3 @@ def create_app():
 
     
     return app
-
-
