@@ -2,7 +2,7 @@
 {% extends "base.html" %} {% block title %}Sign Up{% endblock %}
 {%block content%}
 <form method="POST">
-    <h3 align="center">Sign In</h3>
+    <h3 align="center">Sign Up</h3>
     <div class="form-group">
         <label for="email">Email</label>
         <input type="email" class="form-control" id="email" name="email" placeholder="Enter email"/>
@@ -48,12 +48,40 @@
         </div>
         <div class="input-group">
          <div class="input-group-prepend">
-           <label for="day">Day</label>
+           <span class="input-group-text" id="day">Day</span>
            <input type="day" class="form-control" id="day" name="day" placeholder="Enter your birth day"/>
           </div> 
-        </div> 
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="year">Year</span>
+              <input type="year" class="form-control" id="year" name="year" placeholder="Enter your birth year"/>
+            </div> 
+        </div>
+          
     </div>
-
+    <div class="form-group">
+        <label for="gender">Gender</label>
+        <div class="input-group ">
+         <div class="input-group-prepend">
+           <label class="input-group-text" for="inputGenderSelect">Gender</label>
+         </div>
+         <select class="custom-select" id="inputGenderSelect">
+             <option selected> Choose your gender</option>
+             <option value="1">Male</option>
+             <option value="2">Female</option>
+             <option value="3">Other</option>
+         </select>
+        </div> 
+    </div>    
+    <div class="form-group">
+     <label for="height">Height</label>
+     <input type="height" class="form-control" id="height" name="height" placeholder="Enter your height"/>
+    </div>   
+    <div class="form-group">
+     <label for="weight">Weight</label>
+     <input type="weight" class="form-control" id="weight" name="weight" placeholder="Enter your weight"/>
+    </div>
 
     <br />
     <button type="submit" class="btn btn-primary">Submit</button>
