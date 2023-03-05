@@ -25,32 +25,17 @@
     </div>
     <div class="form-group">
         <label for="birthdate">Birthdate</label>
-        <div class="input-group ">
-         <div class="input-group-prepend">
-           <label class="input-group-text" for="inputMonthSelect">Months</label>
-         </div>
-         <select class="custom-select" id="inputMonthSelect">
-             <option selected> Choose your birth month</option>
-             <option value="1">January</option>
-             <option value="2">Febuary</option>
-             <option value="3">March</option>
-             <option value="4">April</option>
-             <option value="5">May</option>
-             <option value="6">June</option>
-             <option value="7">July</option>
-             <option value="8">August</option>
-             <option value="9">September</option>
-             <option value="10">October</option>
-             <option value="11">November</option>
-             <option value="12">December</option>
-         </select>
-         
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="m">Month</span>
+              <input type="m" class="form-control" id="m" name="m" placeholder="Enter your birth month"/>
+             </div> 
         </div>
         <div class="input-group">
-         <div class="input-group-prepend">
-           <span class="input-group-text" id="day">Day</span>
-           <input type="day" class="form-control" id="day" name="day" placeholder="Enter your birth day"/>
-          </div> 
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="day">Day</span>
+              <input type="day" class="form-control" id="day" name="day" placeholder="Enter your birth day"/>
+             </div> 
         </div>
         <div class="input-group">
             <div class="input-group-prepend">
@@ -62,24 +47,14 @@
     </div>
     <div class="form-group">
         <label for="gender">Gender</label>
-        <div class="input-group ">
-         <div class="input-group-prepend">
-           <label class="input-group-text" for="inputGenderSelect">Gender</label>
-         </div>
-         <select class="custom-select" id="inputGenderSelect">
-             <option selected> Choose your gender</option>
-             <option value="1">Male</option>
-             <option value="2">Female</option>
-             <option value="3">Other</option>
-         </select>
-        </div> 
-    </div>    
+        <input type="gender" class="form-control" id="gender" name="gender" placeholder="Enter your gender"/>
+    </div> 
     <div class="form-group">
-     <label for="height">Height</label>
+     <label for="height">Height(in)</label>
      <input type="height" class="form-control" id="height" name="height" placeholder="Enter your height"/>
     </div>   
     <div class="form-group">
-     <label for="weight">Weight</label>
+     <label for="weight">Weight(lb)</label>
      <input type="weight" class="form-control" id="weight" name="weight" placeholder="Enter your weight"/>
     </div>
 
