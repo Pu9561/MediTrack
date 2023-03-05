@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #12121f;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.calendar {
+  width: 55rem;
+  height: 58rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  margin-right: 5rem;
+}
+
+.month {
+  width: 100%;
+  height: 12rem;
+  background-color: #167e56;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(51.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(100% / 7 - 1rem);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: green;
+  color: white;
+}
+
+.todo {
+  width: 45rem;
+  height: 52rem;
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  margin-left: 4rem;
+  position: center;
+  padding-left:2rem;
+}
+
+.todo h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.todo ul {
+  list-style-type: none;
+  padding: 2rem;
+  height: 40rem;
+  overflow-y: scroll;
+  font-size: 4rem;
+}
+
+.todo li {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+
+
+.todo li:before {
+  content: "";
+  position: absolute;
+  font-size: 4rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  left: 0;
+}
+
+.todo .fa-check {
+  color: #16c79a;
+}
+
+.todo .fa-pencil-alt {
+  color: #f0c419;
+}
+
+.todo .fa-trash-alt {
+  color: #f44336;
+}
+
+.todo input[type="text"] {
+  font-size: 4rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 80%;
+  margin-right: 2rem;
+}
+
+.todo input[type="submit"] {
+  font-size: 5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #167e56;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.upcoming h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.objectives {
+  padding:6rem;
+  word-break: break-all; 
+  
+}
+
+.objectives2 {
+  padding-top:6rem;
+}
+
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .wrapper {
+        display: flex;
+      }
+
+      .calendar-container {
+        flex-grow: 1;
+      }
+
+      .upcoming-container {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calendar-container">
+        <div class="calendar">
+          <div class="month">
+            <i class="prev fa fa-caret-left"></i>
+            <div class="date" id="date">
+              <h1></h1>
+              <p></p>
+            </div>
+            <i class="next fa fa-caret-right"></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days"></div>
+        </div>
+      </div>
+      <div class="upcoming-container">
+        <div class="upcoming">
+          <div style="float:right">
+            <div class="todo">
+              <div style="text-allign:center">
+              <h2>Upcoming</h2>
+                <div style="font-size:2rem;left-margin:20rem">
+              <input type="checkbox" id="obj1" name="obj1" value="obj1" />
+              <label for="obj1">Medication 1</label><br />
+              <input type="checkbox" id="obj2" name="obj2" value="obj2" />
+              <label for="obj2">Medication 2</label><br />
+              <input type="checkbox" id="obj3" name="obj3" value="obj3" />
+              <label for="obj3">Medication 3</label>
+                <div class="objectives2">
+                  <h2>Selected Date</h2>
+                  <div class="objectives" style="text-allign:center"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
